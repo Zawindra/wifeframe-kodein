@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e7ed;
+    color: #4a4a4a;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 200px;
+    background-color: #d4dce2;
+  }
+  
+  .header h1 {
+    font-size: 6rem;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .navigation {
+    background-color: #c4ced6;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+  }
+  
+  .navigation li {
+    margin: 0 15px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ebebeb;
+    justify-content: space-between;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .left-section {
+    flex: 3;
+  }
+  
+  .card, .sub-card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #c4ced6;
+    border-radius: 10px;
+  }
+  
+  .card h2, .sub-card h3, .card p, .card h3 {
+    margin: 0 0 10px 0;
+    color: #9fabb4;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #c4ced6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .image-placeholder-info {
+    width: 100%;
+    height: 300px;
+    background-color: #c4ced6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    flex: 2;
+  }
+  
+  .info-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d4dce2;
+    border-radius: 5px;
+  }
+  
+  .info-box h2, .info-box p {
+    margin-top: 0;
+    color: #c4ced6;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c4ced6;
+  }  
+
+  /* Untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+  .header {
+    padding: 100px 20px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation li {
+    margin: 10px 0;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .card, .info-box {
+    margin: 0 auto;
+  }
+}
+
+/* Untuk layar sedang (tablet) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 150px 20px;
+  }
+
+  .header h1 {
+    font-size: 4.5rem;
+  }
+
+  .header p {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .navigation ul {
+    justify-content: center;
+  }
+
+  .navigation a {
+    font-size: 1.2rem;
+  }
+
+  img, .image-placeholder, .image-placeholder-info {
+    width: 100%;
+    height: auto;
+  }
+  
+}
